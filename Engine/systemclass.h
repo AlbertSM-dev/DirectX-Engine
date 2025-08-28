@@ -38,8 +38,8 @@ private:
 	HINSTANCE m_hinstance;
 	HWND m_hwnd;
 
-	/*InputClass* m_Input;
-	ApplicationClass* m_Application;*/
+	InputClass* m_Input;
+	ApplicationClass* m_Application;
 };
 
 
@@ -53,6 +53,10 @@ static LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 // GLOBALS //
 /////////////
 static SystemClass* ApplicationHandle = 0;
+
+class systemclass
+{
+};
 
 
 #endif
