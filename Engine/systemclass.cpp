@@ -9,6 +9,22 @@ SystemClass::SystemClass()
 	m_Application = 0;
 }
 
+SystemClass::~SystemClass()
+{
+	// Release allocated resources
+	if (m_Application)
+	{
+		delete m_Application;
+		m_Application = nullptr;
+	}
+	if (m_Input)
+	{
+		delete m_Input;
+		m_Input = nullptr;
+	}
+}
+
+
 bool SystemClass::Initialize()
 {
 	int screenWidth, screenHeight;
