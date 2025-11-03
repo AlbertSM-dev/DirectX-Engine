@@ -10,6 +10,10 @@
 //////////////
 #include <windows.h>
 
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
+#include "d3dclass.h"
 
 /////////////
 // GLOBALS //
@@ -30,6 +34,9 @@ public:
     void Shutdown();
     bool Frame();
     bool Render();
+
+private:
+    D3DClass* m_Direct3D;
 };
 
 #endif
