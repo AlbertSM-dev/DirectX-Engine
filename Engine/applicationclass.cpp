@@ -6,7 +6,7 @@
 
 ApplicationClass::ApplicationClass()
 {
-	m_Direct3D = 0;
+	m_Direct3D = nullptr;
 }
 
 
@@ -46,7 +46,7 @@ void ApplicationClass::Shutdown()
 	{
 		m_Direct3D->Shutdown();
 		delete m_Direct3D;
-		m_Direct3D = 0;
+		m_Direct3D = nullptr;
 	}
 
 	return;
