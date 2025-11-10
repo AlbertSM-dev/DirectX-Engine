@@ -456,6 +456,7 @@ void D3DClass::GetVideoCardInfo(char* cardName, int& memory)
 {
 	strcpy_s(cardName, 128, m_videoCardDescription);
 	memory = m_videoCardMemory;
+	cardName = m_videoCardDescription;
 	return;
 }
 
