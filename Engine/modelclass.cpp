@@ -181,3 +181,9 @@ void ModelClass::RenderBuffers(ID3D11DeviceContext* deviceContext)
 
 	return;
 }
+
+// Return the number of indices for drawing.
+int ModelClass::GetIndexCount()
+{
+	return m_indexCount;
+}

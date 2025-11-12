@@ -24,21 +24,17 @@ ColorShaderClass::~ColorShaderClass()
 bool ColorShaderClass::Initialize(ID3D11Device* device, HWND hwnd)
 {
 	bool result;
-	wchar_t vsFilename[128];
-	wchar_t psFilename[128];
-	int error;
+	wchar_t vsFilename[MAX_PATH];
+	wchar_t psFilename[MAX_PATH];
 
-
-	// Set the filename of the vertex shader.
-	error = wcscpy_s(vsFilename, 128, L"../Engine/Shader Files/color.vs");
-	if (error != 0)
+	// Set the filename of the vertex shader (absolute path provided).
+	if (wcscpy_s(vsFilename, MAX_PATH, L"C:\\Users\\Alberto\\source\\repos\\Engine\\Engine\\color.vs") != 0)
 	{
 		return false;
 	}
 
-	// Set the filename of the pixel shader.
-	error = wcscpy_s(psFilename, 128, L"../Engine/Shader Files/color.ps");
-	if (error != 0)
+	// Set the filename of the pixel shader (absolute path provided).
+	if (wcscpy_s(psFilename, MAX_PATH, L"C:\\Users\\Alberto\\source\\repos\\Engine\\Engine\\color.ps") != 0)
 	{
 		return false;
 	}
