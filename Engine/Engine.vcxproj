@@ -134,6 +134,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="inputclass.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="modelclass.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="systemclass.h" />
     <ClInclude Include="targetver.h" />
@@ -145,6 +146,7 @@
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="inputclass.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="modelclass.cpp" />
     <ClCompile Include="systemclass.cpp" />
     <ClCompile Include="write_cardname.cpp" />
   </ItemGroup>
